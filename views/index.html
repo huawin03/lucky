@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <style>
+    .wrap {
+      width: 1180px;
+      margin: 0 auto;
+    }
+    .login>div{
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="login">
+        <div>
+          <span>姓名</span><input type="text" name="username" class="username"/>
+        </div>
+        <div>
+          <span>密码</span><input type="password" name="pass" class="password"/>
+        </div>
+        <input type="submit" value="提交" class="submit">
+      </div>
+    </div>
+  </body>
+  <script>
+$(function(){
+  $('.submit').on('click', function() {
+    var username = $('.username').val();
+    var password = $('.password').val();
+    $.ajax({
+      type: 'post',
+      data: {
+        
+      }
+    })
+  });
+});
+
+  </script>
+</html>
