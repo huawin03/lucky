@@ -39,14 +39,10 @@ $(function(){
         username: username,
         password: password
       }
+    }).then(function(res) {
+      console.info(res);
     })
   });
-  // $.ajax({
-  //   type: 'get',
-  //   url: '/login'
-  // }).then(function(res){
-  //   console.info(res);
-  // });
 });
 
   </script>
